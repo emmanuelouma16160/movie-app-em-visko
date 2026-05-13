@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+  align-items: center;
+}
+
+header h1 {
+  color: #e11d48;
+}
+
+header input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  background: #e11d48;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box button i {
+  font-size: 16px;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  background: url('https://image.tmdb.org/t/p/original/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.hero-content p {
+  margin-top: 10px;
+}
+
+/* GENRES */
+.genres {
+  padding: 20px;
+  text-align: center;
+}
+
+.genres button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.genres button:hover {
+  background: #e11d48;
+}
+
+/* MOVIES GRID */
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.buttons{
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ button:hover{
+  background: #e11d48;
+ }
+
+.movie {
+  background: #020617;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  padding: 10px;
+}
+.movies-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.movie-info h3 {
+  font-size: 16px;
+}
+
+.movie-info p {
+  font-size: 12px;
+  opacity: 0.7;
+}
